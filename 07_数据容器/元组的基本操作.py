@@ -1,0 +1,10 @@
+t1=("周杰伦",11,["football","music"])
+num1=t1.index(11)
+print(f"该学生的年龄为：{num1}")
+num2=t1[0]
+print(f"该学生的姓名为：{num2}")
+t1[2].pop(0)
+print(f"删除后的元组为：{t1}")
+t1=("周杰伦",11,["football","music"])
+t1[2].insert(0,"coding")
+print(f"增加爱好后的元组为：{t1}")

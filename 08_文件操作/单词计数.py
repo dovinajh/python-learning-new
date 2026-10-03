@@ -1,0 +1,5 @@
+f=open("D:/word.txt","r",encoding="UTF-8")
+content=f.read()
+count=content.count("itheima")
+print(f"itheima在文件中出现了:{count}次")
+f.close()
