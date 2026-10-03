@@ -4,16 +4,16 @@
     <meta charset="UTF-8">
     <title>Awesome-pyecharts</title>
                 <script type="text/javascript" src="https://assets.pyecharts.org/assets/v6/echarts.min.js"></script>
-            <script type="text/javascript" src="https://assets.pyecharts.org/assets/v6/maps/china.js"></script>
+            <script type="text/javascript" src="https://assets.pyecharts.org/assets/v6/maps/henan.js"></script>
 
     
 </head>
 <body >
-    <div id="17cbef15e0de4c05bf38c5fb3d2485a8" class="chart-container" style="width:900px; height:500px; "></div>
+    <div id="5659a3e0de8040a4b82e535a0743a728" class="chart-container" style="width:900px; height:500px; "></div>
     <script>
-        var chart_17cbef15e0de4c05bf38c5fb3d2485a8 = echarts.init(
-            document.getElementById('17cbef15e0de4c05bf38c5fb3d2485a8'), 'white', {renderer: 'canvas', locale: 'ZH'});
-        var option_17cbef15e0de4c05bf38c5fb3d2485a8 = {
+        var chart_5659a3e0de8040a4b82e535a0743a728 = echarts.init(
+            document.getElementById('5659a3e0de8040a4b82e535a0743a728'), 'white', {renderer: 'canvas', locale: 'ZH'});
+        var option_5659a3e0de8040a4b82e535a0743a728 = {
     "animation": true,
     "animationThreshold": 2000,
     "animationDuration": 1000,
@@ -28,34 +28,86 @@
     "series": [
         {
             "type": "map",
-            "name": "\u6d4b\u8bd5\u5730\u56fe",
+            "name": "\u6cb3\u5357\u7701\u75ab\u60c5\u5206\u5e03",
             "label": {
                 "show": true,
                 "margin": 8,
                 "richInheritPlainLabel": true,
                 "valueAnimation": false
             },
-            "map": "china",
+            "map": "\u6cb3\u5357",
             "data": [
                 {
-                    "name": "\u5317\u4eac\u5e02",
-                    "value": 99
+                    "name": "\u90d1\u5dde\u5e02",
+                    "value": 137
                 },
                 {
-                    "name": "\u4e0a\u6d77\u5e02",
-                    "value": 199
+                    "name": "\u5f00\u5c01\u5e02",
+                    "value": 25
                 },
                 {
-                    "name": "\u6e56\u5357\u7701",
-                    "value": 299
+                    "name": "\u6d1b\u9633\u5e02",
+                    "value": 29
                 },
                 {
-                    "name": "\u53f0\u6e7e\u7701",
-                    "value": 399
+                    "name": "\u5e73\u9876\u5c71\u5e02",
+                    "value": 55
                 },
                 {
-                    "name": "\u5e7f\u4e1c\u7701",
-                    "value": 499
+                    "name": "\u5b89\u9633\u5e02",
+                    "value": 49
+                },
+                {
+                    "name": "\u9e64\u58c1\u5e02",
+                    "value": 19
+                },
+                {
+                    "name": "\u65b0\u4e61\u5e02",
+                    "value": 53
+                },
+                {
+                    "name": "\u7126\u4f5c\u5e02",
+                    "value": 28
+                },
+                {
+                    "name": "\u6fee\u9633\u5e02",
+                    "value": 13
+                },
+                {
+                    "name": "\u8bb8\u660c\u5e02",
+                    "value": 34
+                },
+                {
+                    "name": "\u6f2f\u6cb3\u5e02",
+                    "value": 33
+                },
+                {
+                    "name": "\u4e09\u95e8\u5ce1\u5e02",
+                    "value": 7
+                },
+                {
+                    "name": "\u5357\u9633\u5e02",
+                    "value": 138
+                },
+                {
+                    "name": "\u5546\u4e18\u5e02",
+                    "value": 86
+                },
+                {
+                    "name": "\u4fe1\u9633\u5e02",
+                    "value": 231
+                },
+                {
+                    "name": "\u5468\u53e3\u5e02",
+                    "value": 66
+                },
+                {
+                    "name": "\u9a7b\u9a6c\u5e97\u5e02",
+                    "value": 128
+                },
+                {
+                    "name": "\u6d4e\u6e90\u5e02",
+                    "value": 5
                 }
             ],
             "roam": true,
@@ -77,7 +129,7 @@
     "legend": [
         {
             "data": [
-                "\u6d4b\u8bd5\u5730\u56fe"
+                "\u6cb3\u5357\u7701\u75ab\u60c5\u5206\u5e03"
             ],
             "selected": {},
             "show": true,
@@ -129,6 +181,7 @@
     "title": [
         {
             "show": true,
+            "text": "\u6cb3\u5357\u7701\u75ab\u60c5\u5730\u56fe",
             "target": "blank",
             "subtarget": "blank",
             "padding": 5,
@@ -163,26 +216,43 @@
         "pieces": [
             {
                 "min": 1,
-                "max": 9,
-                "label": "1-9",
+                "max": 99,
+                "label": "1-99\u4eba",
                 "color": "#CCFFFF"
             },
             {
-                "min": 10,
-                "max": 99,
-                "label": "10-99",
+                "min": 100,
+                "max": 999,
+                "label": "100-999\u4eba",
+                "color": "#FFFF99"
+            },
+            {
+                "min": 1000,
+                "max": 4999,
+                "label": "1000-4999\u4eba",
+                "color": "#FF9966"
+            },
+            {
+                "min": 5000,
+                "max": 9999,
+                "label": "5000-9999\u4eba",
                 "color": "#FF6666"
             },
             {
-                "min": 100,
-                "max": 500,
-                "label": "100-500",
+                "min": 10000,
+                "max": 99999,
+                "label": "10000-99999\u4eba",
+                "color": "#CC3333"
+            },
+            {
+                "min": 100000,
+                "label": "100000+",
                 "color": "#990033"
             }
         ]
     }
 };
-        chart_17cbef15e0de4c05bf38c5fb3d2485a8.setOption(option_17cbef15e0de4c05bf38c5fb3d2485a8);
+        chart_5659a3e0de8040a4b82e535a0743a728.setOption(option_5659a3e0de8040a4b82e535a0743a728);
     </script>
 </body>
 </html>
