@@ -21,7 +21,7 @@ bar3.add_yaxis("GDP",[70,60,60],label_opts=LabelOpts(position="right"))
 bar3.reversal_axis()
 
 #构建时间线对象
-timeline = Timeline({"ithme":ThemeType.LIGHT})
+timeline = Timeline({"theme":ThemeType.LIGHT})
 #在时间线内添加柱状图对象
 timeline.add(bar1,"点1")
 timeline.add(bar2,"点2")
